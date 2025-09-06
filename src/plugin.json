@@ -1,0 +1,14 @@
+{
+  "ID": "09f22573-52b9-433b-832e-450e2f91093b",
+  "ActionKeywords": [],
+  "HideActionKeywordPanel": true,
+  "Name": "Files Dialog Jump",
+  "Description": "Use Files as third-party explorer for dialog jump feature in Flow Launcher",
+  "Author": "Jack251970",
+  "Version": "1.0.0",
+  "Language": "csharp",
+  "Website": "https://github.com/Flow-Launcher/Flow.Launcher.Plugin.DialogJump.Files",
+  "IcoPath": "Images/icon.png",
+  "ExecuteFileName": "Flow.Launcher.Plugin.DialogJump.Files.dll",
+  "MinimumAppVersion": "2.0.0"
+}
