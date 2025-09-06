@@ -48,6 +48,8 @@
     <PackageReference Include="Flow.Launcher.Plugin" Version="5.0.0">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <!-- FlaUI.UIA3 v5.0.0 requires System.Drawing.Common >= 8.0.10 -->
+    <!-- But Flow uses v7.0.0 version, so do not upgrade it -->
     <PackageReference Include="FlaUI.UIA3" Version="4.0.0" />
     <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.183">
       <PrivateAssets>all</PrivateAssets>
