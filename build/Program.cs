@@ -140,7 +140,7 @@ public class PublishTask : FrostingTask<BuildContext>
 
         context.ZipCompress(
             rootPath: srcDir,
-            outputPath: $"{dstDir}/Files Dialog Jump-{context.PublishVersion}.zip",
+            outputPath: $"{dstDir}/Dialog Jump Files-{context.PublishVersion}.zip",
             filePaths: files,
             level: 9
         );

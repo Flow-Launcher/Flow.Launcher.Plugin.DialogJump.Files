@@ -5,7 +5,7 @@
     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
     <!--  General  -->
-    <system:String x:Key="flowlauncher_plugin_files_dialog_jump_plugin_name">Files Dialog Jump</system:String>
-    <system:String x:Key="flowlauncher_plugin_files_dialog_jump_plugin_description">Enable Files as explorer for dialog jump in Flow Launcher</system:String>
+    <system:String x:Key="flowlauncher_plugin_dialog_jump_files_plugin_name">Dialog Jump Files</system:String>
+    <system:String x:Key="flowlauncher_plugin_dialog_jump_files_plugin_description">Use Files as third-party explorer for dialog jump feature in Flow Launcher</system:String>
 
 </ResourceDictionary>

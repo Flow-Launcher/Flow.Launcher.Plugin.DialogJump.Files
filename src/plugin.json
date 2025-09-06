@@ -2,7 +2,7 @@
   "ID": "09f22573-52b9-433b-832e-450e2f91093b",
   "ActionKeyword": "",
   "HideActionKeywordPanel": true,
-  "Name": "Files Dialog Jump",
+  "Name": "Dialog Jump Files",
   "Description": "Use Files as third-party explorer for dialog jump feature in Flow Launcher",
   "Author": "Jack251970",
   "Version": "1.0.0",

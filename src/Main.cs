@@ -23,12 +23,12 @@ public class Main : IPlugin, IPluginI18n, IDialogJumpExplorer
 
     public string GetTranslatedPluginTitle()
     {
-        return Context.API.GetTranslation("flowlauncher_plugin_files_dialog_jump_plugin_name");
+        return Context.API.GetTranslation("flowlauncher_plugin_dialog_jump_files_plugin_name");
     }
 
     public string GetTranslatedPluginDescription()
     {
-        return Context.API.GetTranslation("flowlauncher_plugin_files_dialog_jump_plugin_description");
+        return Context.API.GetTranslation("flowlauncher_plugin_dialog_jump_files_plugin_description");
     }
 
     public IDialogJumpExplorerWindow? CheckExplorerWindow(nint hwnd)
