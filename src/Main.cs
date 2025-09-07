@@ -36,7 +36,16 @@ public class Main : IPlugin, IPluginI18n, IDialogJumpExplorer
         IDialogJumpExplorerWindow? filesWindow = null;
 
         // Is it from Files?
-        string processName = Win32Helper.GetProcessPathFromHwnd(new(hwnd));
+        string processName;
+        try
+        {
+            processName = Win32Helper.GetProcessNameFromHwnd(new(hwnd));
+        }
+        catch (Exception e)
+        {
+            Context.API.LogWarn(ClassName, $"Failed to get process name: {e}");
+            return null;
+        }
         if (processName.Equals("files.exe", StringComparison.OrdinalIgnoreCase))
         {
             // Is it Files's file window?
