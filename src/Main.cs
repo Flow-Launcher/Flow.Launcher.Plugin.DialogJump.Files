@@ -111,13 +111,13 @@ public class Main : IPlugin, IPluginI18n, IDialogJumpExplorer
                 // Find window content to reduce the scope
                 AutomationElement _windowContent = Files.FindFirstChild(cf => cf.ByClassName("Microsoft.UI.Content.DesktopChildSiteBridge"));
 
-                _currentPathGet = _windowContent.FindFirstChild(cf => cf.ByAutomationId("CurrentPathGet"))?.AsTextBox();
+                _currentPathGet ??= _windowContent.FindFirstChild(cf => cf.ByAutomationId("CurrentPathGet"))?.AsTextBox();
                 if (_currentPathGet == null)
                 {
                     Context.API.LogError(ClassName, "Failed to find CurrentPathGet");
                 }
 
-                _currentPathSet = _windowContent.FindFirstChild(cf => cf.ByAutomationId("CurrentPathSet"))?.AsTextBox();
+                _currentPathSet ??= _windowContent.FindFirstChild(cf => cf.ByAutomationId("CurrentPathSet"))?.AsTextBox();
                 if (_currentPathSet == null)
                 {
                     Context.API.LogError(ClassName, "Failed to find CurrentPathSet");
