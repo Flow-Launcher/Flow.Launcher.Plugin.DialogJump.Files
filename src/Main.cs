@@ -114,12 +114,14 @@ public class Main : IPlugin, IPluginI18n, IDialogJumpExplorer
                 _currentPathGet ??= _windowContent.FindFirstChild(cf => cf.ByAutomationId("CurrentPathGet"))?.AsTextBox();
                 if (_currentPathGet == null)
                 {
+                    // TODO: Fix issue here
                     Context.API.LogError(ClassName, "Failed to find CurrentPathGet");
                 }
 
                 _currentPathSet ??= _windowContent.FindFirstChild(cf => cf.ByAutomationId("CurrentPathSet"))?.AsTextBox();
                 if (_currentPathSet == null)
                 {
+                    // TODO: Fix issue here
                     Context.API.LogError(ClassName, "Failed to find CurrentPathSet");
                 }
             }
