@@ -48,7 +48,7 @@ jobs:
         id: version
         uses: notiz-dev/github-action-json-property@release
         with: 
-          path: "src/Flow.Launcher.Plugin.DialogJump.Files/plugin.json"
+          path: "src/plugin.json"
           prop_path: "Version"
 
       # Publish to GitHub releases
